@@ -4,7 +4,7 @@ backend:
     build:
       commands:
         - npm install --legacy-peer-deps
-        - npx ampx generate outputs
+        - npx ampx pipeline-deploy --branch $AWS_BRANCH
 
 frontend:
   phases:
